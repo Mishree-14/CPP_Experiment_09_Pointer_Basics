@@ -1,1 +1,123 @@
-# CPP_Experiment_09_Pointer_Basics
+# Experiment 09: Pointer Basics
+## Aim
+
+To understand the fundamentals of pointers in C++ and implement various pointer operations like pointer arithmetic, array manipulation, and string traversal.
+
+## Objectives
+
+To learn how pointers store and manipulate memory addresses.
+
+To implement pointer arithmetic (increment, difference).
+
+To use pointers for array operations such as reversal.
+
+To explore pointers in string handling.
+
+To compare memory movement in different data types using pointer increments.
+
+## Theory
+### What is a Pointer?
+
+A pointer is a variable that stores the memory address of another variable. Instead of storing data directly, it “points” to the memory location where data resides.
+
+### Declaration:
+```
+int *ptr;   // pointer to int
+```
+
+### Initialization:
+```
+int x = 10;
+int *ptr = &x;   // ptr stores address of x
+```
+
+### Dereferencing:
+```
+cout << *ptr;   // prints value stored at address of x
+```
+
+### Memory & Pointers
+
+Every variable in C++ is stored at a unique memory address.
+
+Pointers help us:
+
+> Access that address.
+
+> Perform operations relative to that address.
+
+> Manipulate data indirectly.
+
+### Pointer Arithmetic
+
+Pointers can be incremented (ptr++) or decremented (ptr--).
+
+The movement is not by 1 byte, but by the size of the data type.
+
+#### Example Table
+
+| Data Type | Size (bytes) | Initial Address | After `ptr++` | 
+|-----------|--------------|-----------------|---------------|
+| int       | 4            | 1000            | 1004          |
+| float     | 4            | 2000            | 2004          |
+| bool      | 1            | 3000            | 3001          |
+| double    | 8            | 4000            | 4008          |
+
+
+### Why use Pointers?
+
+> Efficient memory handling
+
+> Dynamic memory allocation
+
+> Array & string manipulation
+
+> Faster access in data structures (linked lists, trees, etc.)
+
+## Program Descriptions
+
+### Creating a pointer & incrementing it
+
+Declared variables of different types (int, float, bool, double).
+
+Printed original and incremented pointer addresses.
+
+Observed how increments differ based on data type size.
+
+### Sum and Difference of Pointers
+
+Used two pointers pointing to different elements of an array.
+
+Calculated the difference in terms of element positions.
+
+Demonstrated how subtraction gives the number of elements between pointers.
+
+### Reversing an Array using Pointers
+
+Accessed array elements via pointers.
+
+Swapped elements from both ends using pointer arithmetic.
+
+Achieved in-place reversal without using extra memory.
+
+### Printing a String using Pointers
+
+Initialized a character array (string).
+
+Used a pointer to traverse until null terminator '\0'.
+
+Printed characters sequentially.
+
+## Concepts Used
+
+Pointer declaration and initialization
+
+Address-of operator &
+
+Dereference operator *
+
+Pointer arithmetic (++, --, subtraction)
+
+## Conclusion
+i learnt how pointers can be useful in dynamic memory location, in array handling, and in string handling efficiently. How it makes programming clearer, more efficient and easy to understand and visualize.
+Traversing arrays and strings with pointers
