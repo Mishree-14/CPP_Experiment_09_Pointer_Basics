@@ -51,3 +51,26 @@ int main() {
      
     return 0;
 }
+
+## SAMPLE OUTPUT:
+60
+Address of original pointer: 0x7ffe2355bc8c
+61
+Address of incremented pointer: 0x7ffe2355bc90
+
+3.67
+Address of original pointer: 0x7ffe2355bc88
+4.67
+Address of incremented pointer: 0x7ffe2355bc8c
+
+1
+Address of original pointer: 0x7ffe2355bc87
+2
+Address of incremented pointer: 0x7ffe2355bc88
+
+44
+Address of original pointer: 0x7ffe2355bc78
+45
+Address of incremented pointer: 0x7ffe2355bc80
+
+=== Code Execution Successful ===
